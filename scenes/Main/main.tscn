@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://wi8oaqoyquqq"]
+
+[ext_resource type="Script" uid="uid://fqfim5tw5uth" path="res://scenes/Main/main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b4sfpskx1wnr1" path="res://scenes/Minigames/Prototype1/minigame_prototype1.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://buxxq70uwsdde" path="res://scenes/Minigames/ChargingPrototype/charging_prototype.tscn" id="3_px18m"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+minigame_scenes = Array[PackedScene]([ExtResource("2_0xm2m"), ExtResource("3_px18m")])
+
+[node name="Minigame" type="Node2D" parent="."]
+position = Vector2(52, 76)
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Score: "
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_top = 30.0
+offset_right = 60.0
+offset_bottom = 53.0
+text = "Health: "

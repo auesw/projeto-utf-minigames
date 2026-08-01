@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://buxxq70uwsdde"]
+
+[ext_resource type="Script" uid="uid://dk2o68awibkk1" path="res://scenes/Minigames/ChargingPrototype/charging_prototype.gd" id="1_p27fd"]
+
+[node name="MinigamePrototype2" type="Node2D"]
+script = ExtResource("1_p27fd")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ChargeLabel" type="Label" parent="."]
+offset_top = 42.0
+offset_right = 40.0
+offset_bottom = 65.0
+
+[node name="ChargeBar" type="ProgressBar" parent="."]
+offset_left = 141.0
+offset_top = 21.0
+offset_right = 169.0
+offset_bottom = 148.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Instructions" type="Label" parent="."]
+offset_left = 226.0
+offset_right = 553.0
+offset_bottom = 23.0
+text = "Pressione action1 para incrementar a barra"
+horizontal_alignment = 1
+vertical_alignment = 1
